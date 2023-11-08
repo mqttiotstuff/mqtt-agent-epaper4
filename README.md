@@ -50,7 +50,17 @@ These primitives are send thought **mqtt**, as **commands**, and evaluated withi
 
 On the agent side ([epaper_info.py](epaper_info.py)), the screens are not directly implemented using code (too long). 
 
-An SVG template is taken and dynamic values are replaced within the svg document (using templating) and then rasterized using **cairosvg**. The whole display is then splitted into small image tiles and sent over the mqtt topic as below :
+An SVG template is taken and dynamic values are replaced within the svg document (using templating) and then rasterized using **cairosvg**. 
+
+The template is drawn in [Inkskape](https://inkscape.org/fr/), some text box are named for text replacement with [weather api content](https://openweathermap.org/). 
+
+![](inkscape_template.png)
+
+
+
+
+
+The whole display is then splitted into small image tiles and sent over the mqtt topic as below :
 
 ```python
 p = p64("///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8BSlKT////AAAAA////wP///////8D////////A////////wP///////8D////////A////////wP///////8D////////A////////wP///////8D////////A////////wP///////8D////////A////////wP///////8A=", 50, 50)
