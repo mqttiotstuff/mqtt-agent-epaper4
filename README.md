@@ -4,6 +4,12 @@
 This repo contains an experiment to drive epaper display, connected to an esp32s2 chip.
 we use the micropython firmware on the chip, with additional microython libraries for mqtt, and epaper spi control
 
+
+
+![](20231108_083007.jpg)
+
+
+
 ## Expected Outcomes
 
 - Evaluating the ease of multi device control implementation, and microython maturity
@@ -38,17 +44,20 @@ ePaper display 400x300 in BW colors, in this design the esp32s2 implements a dis
 - text (box, textstring) : display a text in a box
 - update(): apply the in-buffer to the screen. (this primitive is quite slow, due to epaper technology)
 
-these primitives are send thought mqtt, as commands, and evaluated within the python interpreter.
+These primitives are send thought **mqtt**, as **commands**, and evaluated within the **python interpreter**. see [device_code/display.py](device_code/display.py)
 
 
-to have a nice display, on the server/agent side,  the screens are not directly implemented thought code. An SVG template is taken and dynamic values are replaced (using templating). The SVG is then rasterized using cairosvg and splitted into small tiles.
-Each tiles are send on the mqtt topic with the following pattern :
 
-	p = p64("///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8BSlKT////AAAAA////wP///////8D////////A////////wP///////8D////////A////////wP///////8D////////A////////wP///////8D////////A////////wP///////8D////////A////////wP///////8A=", 50, 50)
-	d.picture(p, 350, 250)
+On the agent side ([epaper_info.py](epaper_info.py)), the screens are not directly implemented using code (too long). 
+
+An SVG template is taken and dynamic values are replaced within the svg document (using templating) and then rasterized using **cairosvg**. The whole display is then splitted into small image tiles and sent over the mqtt topic as below :
+
+```python
+p = p64("///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8D///z////A///8////wP///f///8BSlKT////AAAAA////wP///////8D////////A////////wP///////8D////////A////////wP///////8D////////A////////wP///////8D////////A////////wP///////8D////////A////////wP///////8A=", 50, 50)
+d.picture(p, 350, 250)
+```
 
 After having sent all the tiles, a final d.update() is sent over the wire to materialize the reconstructed image on the screen.
-
 
 
 
