@@ -69,9 +69,9 @@
        x="-4.0035734"
        y="0.0049584964" />
     <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:0.35269;stroke-opacity:1;fill-opacity:1"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.35269;stroke-opacity:1"
        id="rect846"
-       width="74.746101"
+       width="74.746002"
        height="57.787651"
        x="3.6880968"
        y="3.5785911" />
@@ -82,7 +82,7 @@
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect6716);fill:#1a1a1a;fill-opacity:1;stroke:none"><tspan
          x="24.080078"
          y="57.851562"
-         id="tspan24187">Météo</tspan></text>
+         id="tspan25911">Météo</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-1.6401576,-2.7438211)"
@@ -90,7 +90,7 @@
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect28108);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="183.45117"
          y="113.09766"
-         id="tspan24189">15</tspan></text>
+         id="tspan25913">t</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.35269;stroke-opacity:1"
        id="main"
@@ -105,7 +105,7 @@
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect39930);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="258.62891"
          y="82.638672"
-         id="tspan24191">°C</tspan></text>
+         id="tspan25915">°C</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 47.390158,61.274339 C 47.454193,34.873159 72.930754,25.257115 78.041695,25.24614"
@@ -131,11 +131,11 @@
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="5.6722813"
        y="9.8245201"
-       id="text9907"><tspan
+       id="date"><tspan
          sodipodi:role="line"
          id="tspan9905"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
          x="5.6722813"
-         y="9.8245201">Mardi 11 Novembre</tspan></text>
+         y="9.8245201">date</tspan></text>
   </g>
 </svg>
