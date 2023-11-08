@@ -13,5 +13,19 @@ we use the micropython firmware on the chip, with additional microython librarie
 - Evaluating the ease of creating new screens and design toolchain
 
 
+## Installing esp32s2 device
+
+- download the micropython firmware, and esptool.py it !
+
+install the command line to a venv
+	python3 -mvenv p3
+	source p3/bin/activate
+	pip3 install -r requierments_dev.txt
+
+
+put the python files :
+
+	cd device_code
+	ampy --port /dev/ttyACM0 put .
 
 
