@@ -44,7 +44,6 @@ def construct_image(svgfile, replaced_text):
         print(e)
         replaceText(e.childNodes[0], dom, replaced_text[k])
 
-    print(dom.toprettyxml())
     dom.writexml(open("result.svg", "w"))
     import cairosvg
     cairosvg.svg2png(url="result.svg", write_to="output.png", output_width=400, output_height=300)
