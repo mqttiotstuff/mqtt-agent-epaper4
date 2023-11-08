@@ -7,7 +7,16 @@ import configparser
 import os.path
 import json
 
+from jsonpath_ng import jsonpath, parse
+import rasterizer
+import base64 
+
 import traceback
+
+
+import time
+import locale
+locale.setlocale(locale.LC_ALL,'fr_FR.UTF-8')
 
 EPAPER_TOPIC = "home/esp27"
 EPAPER_COMMAND_TOPIC = EPAPER_TOPIC + "/actuators/epaper4"
@@ -81,19 +90,24 @@ while True:
               response = urllib.request.urlopen(f"https://api.openweathermap.org/data/2.5/weather?lat=45.764430&lon=4.878273&appid={api_key}")
               print("response returned : {}".format(response.status))
               jsoncontent = json.loads(response.read())
-              print("result {}".format(jsoncontent))
-              weather = f"""
-  Tendance : {jsoncontent["weather"][0]["description"]}
-  Temperature : {int(jsoncontent["main"]["temp"])-273}              
-"""
-              command = f"""
-d.clear()
-b = d.box(0,0,400,300)                 
-d.text(b, \"\"\"{weather}\"\"\")
-d.update()
-"""
-              client2.publish(EPAPER_COMMAND_TOPIC, command)
               latesttime = time.time()
+              exp = parse('$.weather[0].description')
+              description = exp.find(jsoncontent)[0].value
+
+              expdegre = parse('$.main.temp')
+              v = int(expdegre.find(jsoncontent)[0].value) - 273
+
+              date_display = time.strftime('%A %d/%m/%Y %H:%M:%S')
+              result = rasterizer.construct_image("Meteo.svg", {"degres": str(v), "date": date_display })
+
+              client2.publish(EPAPER_COMMAND_TOPIC,"d.clear()")
+              for r in result:
+                  (x,y,w,h,b) = r
+                  f = f"p = p64(\"{base64.b64encode(b).decode('utf-8')}\", {w}, {h})\nd.picture(p, {x}, {y})"
+                  client2.publish(EPAPER_COMMAND_TOPIC, f)
+                  
+              print("send the change to screen")
+              client2.publish(EPAPER_COMMAND_TOPIC,"d.update()")
           except:
               traceback.print_exc()
 
