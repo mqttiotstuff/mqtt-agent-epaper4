@@ -1,0 +1,3 @@
+cairosvg
+jsonpath_ng
+pillow

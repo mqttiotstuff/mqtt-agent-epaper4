@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="82mm"
+   height="65mm"
+   viewBox="0 0 82 65"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="Meteo.svg"
+   inkscape:export-filename="/home/use/image.png"
+   inkscape:export-xdpi="117.08781"
+   inkscape:export-ydpi="117.08781"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     width="82mm"
+     inkscape:zoom="1.5037598"
+     inkscape:cx="140.64746"
+     inkscape:cy="139.98246"
+     inkscape:window-width="1850"
+     inkscape:window-height="1016"
+     inkscape:window-x="70"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="258.62843"
+       y="47.248797"
+       width="57.074104"
+       height="46.652716"
+       id="rect39930" />
+    <rect
+       x="183.45175"
+       y="77.707302"
+       width="59.414997"
+       height="46.683502"
+       id="rect28108" />
+    <rect
+       x="24.080145"
+       y="22.461603"
+       width="138.16703"
+       height="47.431425"
+       id="rect6716" />
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.372372"
+       id="rect862"
+       width="91.614082"
+       height="65.294151"
+       x="-4.0035734"
+       y="0.0049584964" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.35269;stroke-opacity:1;fill-opacity:1"
+       id="rect846"
+       width="74.746101"
+       height="57.787651"
+       x="3.6880968"
+       y="3.5785911" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,0.6397172,43.267991)"
+       id="text6714"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect6716);fill:#1a1a1a;fill-opacity:1;stroke:none"><tspan
+         x="24.080078"
+         y="57.851562"
+         id="tspan24187">Météo</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-1.6401576,-2.7438211)"
+       id="degres"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect28108);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="183.45117"
+         y="113.09766"
+         id="tspan24189">15</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.35269;stroke-opacity:1"
+       id="main"
+       width="33.697639"
+       height="22.003815"
+       x="7.2292519"
+       y="20.799852" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-8.4202181,5.2187916)"
+       id="text39928"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect39930);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="258.62891"
+         y="82.638672"
+         id="tspan24191">°C</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 47.390158,61.274339 C 47.454193,34.873159 72.930754,25.257115 78.041695,25.24614"
+       id="path44372"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.340978px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 38.27539,61.27368 C 38.358468,27.4762 71.411323,15.166218 78.042184,15.152169"
+       id="path44372-4"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.170144px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 58.199217,61.27389 C 58.240671,44.409357 74.733646,38.266825 78.042365,38.259815"
+       id="path44372-4-8"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.0880797px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 67.7701,61.273991 c 0.02146,-8.73039 8.559502,-11.910241 10.272352,-11.91387"
+       id="path44372-4-8-8"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="5.6722813"
+       y="9.8245201"
+       id="text9907"><tspan
+         sodipodi:role="line"
+         id="tspan9905"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="5.6722813"
+         y="9.8245201">Mardi 11 Novembre</tspan></text>
+  </g>
+</svg>
